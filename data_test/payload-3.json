@@ -1,0 +1,38 @@
+{
+  "TenantId": "test-02",
+  "YubinNo": "530-0001",
+  "SeibetsuKbn": "99",
+  "Age": 99,
+  "YokaigoStsKbn": "12",
+  "SodanNaiyo": "Saikin, yakan hinyou no tame suimin ga samatagerareteimasu.",
+  "CareMngSodanNaiyo": "Yakan no idouni yoru futan oyobi tentou risuku o keigen suru tame, beddo saido e no po-taruburu toire no secchi o kentou shimasu.",
+  "Height": 146.5,
+  "Weight": 47.0,
+  "AdlList": [
+    {
+      "ServicePlanItemCd": "0009",
+      "ServicePlanNaiyo": "Yakan wa 2~3 jikan oki ni nyou i ga ari, tsudo okiagatte hai nyou suru hitsuyou ga arimasu."
+    },
+    {
+      "ServicePlanItemCd": "0015",
+      "ServicePlanNaiyo": "Yakan no hinkai na kakusei ni yori nichuu ni tsuyoi nemuke ga mirareru, katsudouryou ga teika shiteimasu."
+    },
+    {
+      "ServicePlanItemCd": "0019",
+      "ServicePlanNaiyo": "Yakan hinyou ni yoru suimin fusoku ga manseika shiteori, hiroukan no zoukyou ga mitomeraremasu."
+    }
+  ],
+  "FamilyKosei": "Gokourei no haiguusha to doukyo sareteimasu.",
+  "ServiceRiyoJokyo": ["Houmon kango"],
+  "RiyoFukushiYogu": "Po-taruburu toire",
+  "TokkiJiko": "Po-taruburu toire oyobi kyūshū paddo o shiyou shiteimasu ga, yakan ni okeru houmon kango ni yoru keizokuteki na kansatsu oyobi fukuyaku shidou ga hitsuyou na joukyou desu.",
+  "HonninKimochiFlg": 0,
+  "HonninKimochiNaiyo": "Yakan ni nando mo me ga sameru koto ni yoru suimin fusoku ni taishite fuman o kanjite orare, nichuu no darusa ni taishite mo iradachi ga mirareru yousu desu. Mata, kaigo o ninau okusama e no futan o shinpai sarete iru kanousei mo kangaeraremasu.",
+  "HonninLifeMind": "Tsuma mo kourei nanode, watashi no yakan no kaijo de tsuma no suimin ga samatagerareru no ga moushiwakenai. Tsuma ga anshin shite nemureru you ni, nanika taisaku o mitsuketai.",
+  "FamilyLifeMind": "Yakan no mimamori ya haisetsu kaijo no futan ga keigen sareru koto o negatte ori, yakan saabisu no katsuyou ya haisetsu kea ni oite kufuu o toriirete itadaku koto de, fuufu tomoni anshin shite yakan o sugoseru you ni shite hoshii",
+  "ShienPlan": "Yakan no hinyou ni yoru suimin shougai ni taishi, houmon kango ni yoru seikatsu shidou to fukuyaku kanri o tettei suru. Po-taruburu toire to kyūmizu paddo no shiyou joukyou o kakunin shi, yori kaiteki na haisetsu kea o mosaku suru. Gohonnin no fuman to, kaigosha de aru tsuma no hirou ni hairyo shi, yakan no haisetsu kaijo no futan keigen saku (rei: neru mae no suibun seigen, haisetsu rizumu no chousei) o kazoku to kyouryoku shite kentou・jisshi suru.",
+  "JukyoTypFlg": 9,
+  "Kaisu": null,
+  "ElevatorFlg": 9,
+  "JukankyoBiko": null
+}

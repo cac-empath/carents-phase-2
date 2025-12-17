@@ -1,0 +1,76 @@
+{
+  "ProposalId": "18210c5d-d962-4f70-a4ce-05cb32c175ce",
+  "ReceiveKekkaKbn": "00",
+  "TeianYmdHms": "2025-12-10T17:26:05.622019+09:00",
+  "ErrMessage": [],
+  "NeedRiyuList": [
+    {
+      "NeedRiyuNo": "1",
+      "FukushiYoguNeedRiyu": "強い腰痛のため、自力での離床が困難であり、介助が必要である。"
+    },
+    {
+      "NeedRiyuNo": "2",
+      "FukushiYoguNeedRiyu": "座位から立ち上がる際にも激しい痛みを伴い、手すりなどの支えがないと困難である。"
+    },
+    {
+      "NeedRiyuNo": "3",
+      "FukushiYoguNeedRiyu": "歩行時にふらつきが見られ、長距離の歩行は困難である。"
+    },
+    {
+      "NeedRiyuNo": "4",
+      "FukushiYoguNeedRiyu": "腰痛の影響で屋内での移動もゆっくりとなっており、身体的負担が大きい。"
+    }
+  ],
+  "ChoiseRentalList": [
+    {
+      "NeedRiyuNo": "1",
+      "TaisCd": "00200-000685",
+      "TeianRiyu": "電動ベッドを使用することで、腰への負担を軽減しながら、安全に離床動作を行えるように支援します。",
+      "ServiceCd": "1003",
+      "RiyoKeirekiKbn": "2"
+    },
+    {
+      "NeedRiyuNo": "2",
+      "TaisCd": "00690-000075",
+      "TeianRiyu": "立ち上がり補助手すりを設置することで、座位から立ち上がり動作を安全に行えるように支援します。",
+      "ServiceCd": "1007",
+      "RiyoKeirekiKbn": "3"
+    },
+    {
+      "NeedRiyuNo": "3",
+      "TaisCd": "01165-000001",
+      "TeianRiyu": "歩行器を使用することで、歩行時のふらつきを抑制し、安全に歩行できるように支援します。",
+      "ServiceCd": "1009",
+      "RiyoKeirekiKbn": "3"
+    },
+    {
+      "NeedRiyuNo": "4",
+      "TaisCd": "00238-000011",
+      "TeianRiyu": "ラクラックスポータブルを使用することで、ベッドから車いすへの移乗をスムーズに行い、移動に伴う身体的負担を軽減します。",
+      "ServiceCd": "1004",
+      "RiyoKeirekiKbn": "3"
+    }
+  ],
+  "KadaiMokuhyoList": [
+    {
+      "KadaiMokuhyoNo": 1,
+      "KaiketsuNeedKadai": "腰痛による離床困難を軽減する",
+      "FukushiYoguRiyoMokuhyo": "電動ベッドを使用し、安全かつ容易に離床できるようにする。"
+    },
+    {
+      "KadaiMokuhyoNo": 2,
+      "KaiketsuNeedKadai": "立ち上がり時の腰への負担と痛みを軽減する",
+      "FukushiYoguRiyoMokuhyo": "手すりを使用することで、立ち上がり動作を安全かつスムーズに行えるようにする。"
+    },
+    {
+      "KadaiMokuhyoNo": 3,
+      "KaiketsuNeedKadai": "歩行時のふらつきを抑制し、安全に歩行する",
+      "FukushiYoguRiyoMokuhyo": "歩行器を使用することで、歩行時のふらつきを抑制し、転倒リスクを軽減する。"
+    },
+    {
+      "KadaiMokuhyoNo": 4,
+      "KaiketsuNeedKadai": "屋内移動時の身体的負担を軽減する",
+      "FukushiYoguRiyoMokuhyo": "移乗用具を使用することで、ベッドから車いすなどへの移動を容易にし、腰への負担を軽減する。"
+    }
+  ]
+}
