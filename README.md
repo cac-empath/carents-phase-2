@@ -2,7 +2,7 @@
 
 ## Summary
 
-Project ini punya **2 script**:
+Project ini punya **3 script**:
 
 - **`data_prep.py`**
   Menyiapkan data TAIS Code dari JSON per tenant, lalu membuat:
@@ -10,8 +10,16 @@ Project ini punya **2 script**:
   - JSON mapping TAIS → tenant
   - Excel matrix TAIS vs tenant
 
+- **`test_script.py`**
+  Melakukan testing API dan analisis TAIS Code:
+
+  - Kirim request API dari payload JSON
+  - Simpan response API
+  - Bandingkan TAIS Code dengan data tenant & master TAIS
+  - Tampilkan hasil di terminal dan Excel
+
 - **`compare.py`**
-  Mengecek TAIS Code bulanan dari response JSON dan membandingkannya dengan:
+  Mengecek TAIS Code dari response JSON dan membandingkannya dengan:
 
   - data tenant
   - master TAIS (rental / non-rental)
@@ -33,17 +41,23 @@ project/
 │
 ├─ data_response/
 │  ├─ api_response_20251101.json
-│  ├─ api_response_20251115.json
 │  └─ api_response_20251130.json
 │
-├─ data_reports/              # output (git ignored)
-│  ├─ tais_code_tenant.json   # hasil mapping TAIS → tenant
-│  ├─ tais_matrix_result_*.xlsx
-│  └─ compare_result_*.xlsx
+├─ data_test/
+│  ├─ payload-1.json
+│  └─ payload-2.json
 │
-├─ codelist202511.xlsx        # master TAIS (Kolom A = TaisCd, Kolom E = Rent)
-├─ data_prep.py               # preparation TAIS per tenant
-├─ compare.py                 # testing TAIS bulanan
+├─ data_reports/                  # output (git ignored)
+│  ├─ tais_code_tenant.json       # hasil mapping TAIS → tenant
+│  ├─ tais_matrix_result_*.xlsx   # hasil matrix TAIS vs tenant
+│  └─ compare_result_*.xlsx       # hasil perbandingan TAIS
+│
+├─ .env                           # API config (not committed)
+├─ .gitignore
+├─ codelist202511.xlsx            # master TAIS (Kolom A = TaisCd, Kolom E = Rent)
+├─ data_prep.py                   # preparation TAIS per tenant
+├─ test_script.py                 # API testing & TAIS analysis
+├─ compare.py
 └─ README.md
 ```
 
@@ -53,17 +67,18 @@ project/
 
 ### Yang perlu disiapkan
 
-- Python **3.11+**
+- Python **3.11**
 - File:
 
-  - `codelist202511.xlsx`
+  - `taiscode.xlsx`
   - JSON tenant di `data_raw/*/*.json`
-  - JSON response bulanan di `data_response/*.json`
+  - JSON response di `data_response/*.json`
+  - JSON data test di `data_test/*.json`
 
 - Library:
 
 ```bash
-pip install pandas openpyxl
+pip install -r requirements.txt
 ```
 
 ---
@@ -84,10 +99,10 @@ Output:
 ### 2️⃣ Testing TAIS Bulanan
 
 ```bash
-python compare.py
+python test_script.py
 ```
 
 Output:
 
-- Tabel hasil di terminal
+- `Tabel hasil di terminal`
 - `data_reports/compare_result_<timestamp>.xlsx`
