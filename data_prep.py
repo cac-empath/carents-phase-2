@@ -55,7 +55,7 @@ for tenant_folder in sorted(os.listdir(DATA_FOLDER)):
             continue
 
         for item in data:
-            plans = item.get("TU_ServicePlanChoiseRental")
+            plans = item.get("TU_ServicePlanChoiseRental") or item.get("TU_ServicePlanTeian") or []
             if not isinstance(plans, list):
                 continue
 

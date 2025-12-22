@@ -10,7 +10,7 @@ import string
 # ============================================================
 RESPONSE_DIR = Path("data_response")
 TENANT_TAIS_FILE = Path("data_reports/tais_code_tenant.json")
-CODELIST_FILE = "codelist202511.xlsx"
+CODELIST_FILE = "codelist202512.xlsx"
 OUTPUT_DIR = Path("data_reports")
 
 OUTPUT_DIR.mkdir(exist_ok=True)

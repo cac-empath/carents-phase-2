@@ -1,74 +1,7 @@
 {
-  "ProposalId": "45fab4d5-10fb-4c58-b548-4121f5984544",
-  "ReceiveKekkaKbn": "00",
-  "TeianYmdHms": "2025-12-10T17:27:20.249345+09:00",
-  "ErrMessage": [],
-  "NeedRiyuList": [
-    {
-      "NeedRiyuNo": "1",
-      "FukushiYoguNeedRiyu": "食事中に頻繁にむせることがあり、誤嚥のリスクがあるため、食事を安全に行えるように福祉用具の利用を検討する。"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "FukushiYoguNeedRiyu": "食欲低下と食事への抵抗があり、十分な栄養摂取が困難であるため、食事への意欲を高め、必要な栄養を摂取できるよう福祉用具の利用を検討する。"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "FukushiYoguNeedRiyu": "立ち上がりや歩行が不安定であるため、安全に移動できるよう福祉用具の利用を検討する。"
-    }
-  ],
-  "ChoiseRentalList": [
-    {
-      "NeedRiyuNo": "1",
-      "TaisCd": "00149-000044",
-      "TeianRiyu": "頭頚部をしっかりサポートし、誤嚥のリスクを軽減するため。",
-      "ServiceCd": "1002",
-      "RiyoKeirekiKbn": "3"
-    },
-    {
-      "NeedRiyuNo": "1",
-      "TaisCd": "00245-000180",
-      "TeianRiyu": "両肘をテーブルにのせることで、食事動作を安定させ、安全に自力で食べることを可能にするため。",
-      "ServiceCd": "1002",
-      "RiyoKeirekiKbn": "3"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "TaisCd": "00066-000207",
-      "TeianRiyu": "両肘をテーブルの形状でサポートすることにより、楽に腕や指を動かし、食事への意欲を高めるため。",
-      "ServiceCd": "1002",
-      "RiyoKeirekiKbn": "3"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "TaisCd": "00175-000328",
-      "TeianRiyu": "移動の負担を軽減し、安全に移動できるようにするため。",
-      "ServiceCd": "1001",
-      "RiyoKeirekiKbn": "1"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "TaisCd": "00540-000028",
-      "TeianRiyu": "座位を安定させ、姿勢を保持しやすくすることで、立ち上がりや歩行をサポートするため。",
-      "ServiceCd": "1002",
-      "RiyoKeirekiKbn": "1"
-    }
-  ],
-  "KadaiMokuhyoList": [
-    {
-      "KadaiMokuhyoNo": 1,
-      "KaiketsuNeedKadai": "食事中のむせを減らし、安全に食事ができる環境を整えたい。",
-      "FukushiYoguRiyoMokuhyo": "頭頚部を支えるヘッドレストや食事用テーブルを使用することで、姿勢を安定させ、誤嚥のリスクを減らす。"
-    },
-    {
-      "KadaiMokuhyoNo": 2,
-      "KaiketsuNeedKadai": "食欲不振を改善し、食事を楽しめるようにしたい。",
-      "FukushiYoguRiyoMokuhyo": "食事動作をサポートするテーブルを使用することで、自力で食べる意欲を高め、十分な栄養を摂取する。"
-    },
-    {
-      "KadaiMokuhyoNo": 3,
-      "KaiketsuNeedKadai": "立ち上がりや歩行時のふらつきをなくし、安全に移動できるようにしたい。",
-      "FukushiYoguRiyoMokuhyo": "車いすやクッションを使用することで、移動や座位の安定性を高め、転倒のリスクを減らす。"
-    }
-  ]
+  "file": "payload-4.json",
+  "status_code": 401,
+  "response": {
+    "detail": "Invalid token"
+  }
 }

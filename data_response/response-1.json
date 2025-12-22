@@ -1,60 +1,7 @@
 {
-  "ProposalId": "1e337546-d2d7-4c88-b81f-32e2a97b911a",
-  "ReceiveKekkaKbn": "00",
-  "TeianYmdHms": "2025-12-10T17:24:59.710685+09:00",
-  "ErrMessage": [],
-  "NeedRiyuList": [
-    {
-      "NeedRiyuNo": "1",
-      "FukushiYoguNeedRiyu": "手足のしびれにより、シャツのボタン留めなど細かい動作を伴う更衣が困難であるため、福祉用具の導入を検討する。"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "FukushiYoguNeedRiyu": "麻痺と筋力低下により、更衣時に одежды 袖を通しにくい状況を改善するために、福祉用具の利用を検討する。"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "FukushiYoguNeedRiyu": "２階の浴室およびトイレへの移動に階段を使用する必要があり、転倒リスクがあるため、福祉用具の導入を検討する。"
-    }
-  ],
-  "ChoiseRentalList": [
-    {
-      "NeedRiyuNo": "1",
-      "TaisCd": "00200-000029",
-      "TeianRiyu": "患足に過度の負担をかけないようにしつつ歩行を補助する。",
-      "ServiceCd": "1010",
-      "RiyoKeirekiKbn": "2"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "TaisCd": "00170-001061",
-      "TeianRiyu": "低摩擦素材を使用したロール状のスライディングシートで、体位変換や寝位置の調整、移乗を容易にする。",
-      "ServiceCd": "1006",
-      "RiyoKeirekiKbn": "3"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "TaisCd": "00254-000052",
-      "TeianRiyu": "突っ張り棒タイプの手すりをトイレ入口に設置し跨ぎや立ち座り動作を補助する。",
-      "ServiceCd": "1007",
-      "RiyoKeirekiKbn": "2"
-    }
-  ],
-  "KadaiMokuhyoList": [
-    {
-      "KadaiMokuhyoNo": 1,
-      "KaiketsuNeedKadai": "手指のしびれによりボタン留めが困難なため、容易に留め外しが可能な用具を使用したい。",
-      "FukushiYoguRiyoMokuhyo": "ボタンエイドを使用することで、更衣動作を自立して行えるようにする。"
-    },
-    {
-      "KadaiMokuhyoNo": 2,
-      "KaiketsuNeedKadai": "麻痺と筋力低下により、更衣時に одежды 袖を通しにくい。",
-      "FukushiYoguRiyoMokuhyo": "スライディングシートを使用することで、 минимальным 介助で安全に更衣を行えるようにする。"
-    },
-    {
-      "KadaiMokuhyoNo": 3,
-      "KaiketsuNeedKadai": "階段での移動に不安があり、転倒リスクを軽減したい。",
-      "FukushiYoguRiyoMokuhyo": "手すりを設置することで、階段の昇降を安全に行えるようにする。"
-    }
-  ]
+  "file": "payload-1.json",
+  "status_code": 401,
+  "response": {
+    "detail": "Invalid token"
+  }
 }

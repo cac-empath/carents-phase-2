@@ -1,60 +1,7 @@
 {
-  "ProposalId": "0b873591-0e08-483c-a073-88859d9ae9e2",
-  "ReceiveKekkaKbn": "00",
-  "TeianYmdHms": "2025-12-10T17:26:52.967557+09:00",
-  "ErrMessage": [],
-  "NeedRiyuList": [
-    {
-      "NeedRiyuNo": "1",
-      "FukushiYoguNeedRiyu": "夜間頻尿による睡眠障害のため、夜間の排泄動作における転倒リスクを軽減するために福祉用具が必要です。"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "FukushiYoguNeedRiyu": "夜間頻尿による睡眠不足が慢性化し、日中の活動量が低下している状態を改善するために福祉用具が必要です。"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "FukushiYoguNeedRiyu": "夜間の排尿回数が多く、介護者の睡眠を妨げている可能性を考慮し、介護者の負担を軽減するために福祉用具が必要です。"
-    }
-  ],
-  "ChoiseRentalList": [
-    {
-      "NeedRiyuNo": "1",
-      "TaisCd": "00200-000583",
-      "TeianRiyu": "ベッドからの乗降りの際に、サイドレールを抜くことなく脚を降ろせるため、転倒リスクを軽減します。",
-      "ServiceCd": "1004",
-      "RiyoKeirekiKbn": "3"
-    },
-    {
-      "NeedRiyuNo": "2",
-      "TaisCd": "00175-000273",
-      "TeianRiyu": "介助により外出を可能にする事により、ＡＤＬの改善を図り、日中の活動量を増加させます。",
-      "ServiceCd": "1001",
-      "RiyoKeirekiKbn": "2"
-    },
-    {
-      "NeedRiyuNo": "3",
-      "TaisCd": "01187-000002",
-      "TeianRiyu": "自動排泄処理装置を使用することで、夜間の介護者の負担を軽減し、睡眠を確保します。",
-      "ServiceCd": "1013",
-      "RiyoKeirekiKbn": "3"
-    }
-  ],
-  "KadaiMokuhyoList": [
-    {
-      "KadaiMokuhyoNo": 1,
-      "KaiketsuNeedKadai": "夜間のトイレへの移動中の転倒を防ぎたい。",
-      "FukushiYoguRiyoMokuhyo": "サイドレールを使用することで、夜間の移動を安全に行い、転倒リスクを減らす。"
-    },
-    {
-      "KadaiMokuhyoNo": 2,
-      "KaiketsuNeedKadai": "日中の活動量低下を改善したい。",
-      "FukushiYoguRiyoMokuhyo": "車椅子を利用して外出を促し、心身機能の活性化を図る。"
-    },
-    {
-      "KadaiMokuhyoNo": 3,
-      "KaiketsuNeedKadai": "介護者の夜間の負担を軽減したい。",
-      "FukushiYoguRiyoMokuhyo": "自動排泄処理装置の導入により、介護者の夜間の排泄介助の負担を軽減し、十分な休息を確保する。"
-    }
-  ]
+  "file": "payload-3.json",
+  "status_code": 401,
+  "response": {
+    "detail": "Invalid token"
+  }
 }
