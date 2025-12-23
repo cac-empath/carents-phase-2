@@ -1,7 +1,85 @@
 {
   "file": "payload-1.json",
-  "status_code": 401,
+  "status_code": 200,
   "response": {
-    "detail": "Invalid token"
+    "ProposalId": "b25d674a-04d9-4a84-8d59-5dc9f0479af2",
+    "ReceiveKekkaKbn": "00",
+    "TeianYmdHms": "2025-12-23T11:19:36.802644+09:00",
+    "ErrMessage": [],
+    "NeedRiyuList": [
+      {
+        "NeedRiyuNo": "1",
+        "FukushiYoguNeedRiyu": "ベッドからの起き上がりが困難で、介助がないと端座位保持ができないため。"
+      },
+      {
+        "NeedRiyuNo": "2",
+        "FukushiYoguNeedRiyu": "長時間の座位保持が難しく、臀部に疼痛があり褥瘡リスクがあるため。"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "FukushiYoguNeedRiyu": "深夜に自力で起き上がろうとして転倒しかけたことがあるため。"
+      }
+    ],
+    "ChoiseRentalList": [
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00054-000132",
+        "TeianRiyu": "ルーツ（コーナータイプ）は、置くだけで使えるため、ベッドからの起き上がりをサポートします。",
+        "ServiceCd": "1007",
+        "RiyoKeirekiKbn": "2"
+      },
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00200-000201",
+        "TeianRiyu": "介護支援ベッドは、立ち上がりに配慮した高さ調整機能が付いているため、利用者の状態に合わせて調整できます。",
+        "ServiceCd": "1003",
+        "RiyoKeirekiKbn": "3"
+      },
+      {
+        "NeedRiyuNo": "2",
+        "TaisCd": "00206-000103",
+        "TeianRiyu": "スモールチェンジ　ラグーナセット　900タイプは、自動体位変換機能により、褥瘡のリスクを軽減します。",
+        "ServiceCd": "1006",
+        "RiyoKeirekiKbn": "2"
+      },
+      {
+        "NeedRiyuNo": "2",
+        "TaisCd": "01102-000018",
+        "TeianRiyu": "通気ビーズマット　おきらくさんは、全身用除圧パッドとして、褥瘡予防に役立ちます。",
+        "ServiceCd": "1005",
+        "RiyoKeirekiKbn": "3"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00054-000132",
+        "TeianRiyu": "ルーツ（コーナータイプ）は、置くだけで使えるため、夜間の起き上がりをサポートし、転倒を予防します。",
+        "ServiceCd": "1007",
+        "RiyoKeirekiKbn": "2"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00054-000107",
+        "TeianRiyu": "離床支援バーBは、寝返り･起き上がり･立ち上がりの離床動作をサポートするベッド用手すりです。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "3"
+      }
+    ],
+    "KadaiMokuhyoList": [
+      {
+        "KadaiMokuhyoNo": 1,
+        "KaiketsuNeedKadai": "ベッドからの起き上がりが困難",
+        "FukushiYoguRiyoMokuhyo": "手すりや高さ調整機能付きベッドを使用することで、安全に起き上がれるようにする。"
+      },
+      {
+        "KadaiMokuhyoNo": 2,
+        "KaiketsuNeedKadai": "長時間の座位保持による褥瘡リスク",
+        "FukushiYoguRiyoMokuhyo": "体圧分散マットを使用することで、臀部への負担を軽減し、褥瘡を予防する。"
+      },
+      {
+        "KadaiMokuhyoNo": 3,
+        "KaiketsuNeedKadai": "夜間の転倒リスク",
+        "FukushiYoguRiyoMokuhyo": "離床支援用手すりを使用することで、夜間の起き上がりを安全にし、転倒を予防する。"
+      }
+    ]
   }
 }

@@ -1,7 +1,15 @@
 {
   "file": "payload-3.json",
-  "status_code": 401,
+  "status_code": 200,
   "response": {
-    "detail": "Invalid token"
+    "ProposalId": "41b21df6-76b7-4b34-8947-3a3ac70a96b9",
+    "ReceiveKekkaKbn": "09",
+    "TeianYmdHms": "2025-12-22T19:31:11.727221+09:00",
+    "ErrMessage": [
+      "このサービスの利用可能回数を超えました。プランのアップグレードをご検討ください。"
+    ],
+    "NeedRiyuList": [],
+    "ChoiseRentalList": [],
+    "KadaiMokuhyoList": []
   }
 }
