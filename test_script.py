@@ -2,9 +2,9 @@ import json
 import requests
 import pandas as pd
 from pathlib import Path
-from collections import OrderedDict, defaultdict
+from collections import defaultdict
 from datetime import datetime
-import string
+
 from config import API_URL, AUTH_URL, CLIENT_ID, CLIENT_SECRET
 
 # ============================================================
@@ -22,11 +22,39 @@ REPORT_DIR.mkdir(exist_ok=True)
 # HELPER
 # ============================================================
 
-def normalize_tais(value: str) -> str:
+def normalize_tais(value):
+    if value is None:
+        return ""
     return str(value).strip().replace("－", "-")
 
+def find_codelist_file():
+    fixed = Path("codelist.xlsx")
+    if fixed.exists():
+        return fixed
+
+    candidates = sorted(
+        Path(".").glob("codelist*.xlsx"),
+        key=lambda f: f.stat().st_mtime,
+        reverse=True
+    )
+
+    if not candidates:
+        raise FileNotFoundError("❌ No codelist excel file found")
+
+    return candidates[0]
+
+def generate_curl_txt(api_url, headers, payload):
+    payload_pretty = json.dumps(payload, indent=2, ensure_ascii=False)
+
+    return (
+        f'curl -X POST "{api_url}" \\\n'
+        f'  -header "Authorization: {headers["Authorization"]}" \\\n'
+        f'  -header "Content-Type: application/json" \\\n'
+        f"  -data '{payload_pretty}'"
+    )
+
 # ============================================================
-# AUTH - GET ACCESS TOKEN
+# AUTH
 # ============================================================
 
 auth_response = requests.post(
@@ -40,35 +68,43 @@ auth_response = requests.post(
 )
 
 auth_response.raise_for_status()
-ACCESS_TOKEN = auth_response.json()["access_token"]
+auth_json = auth_response.json()
 
-headers = {
+ACCESS_TOKEN = auth_json.get("access_token")
+if not ACCESS_TOKEN:
+    raise RuntimeError("❌ access_token not found")
+
+auth_info = {
+    "access_token": ACCESS_TOKEN,
+    "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "expires_in": auth_json.get("expires_in")
+}
+
+http_headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {ACCESS_TOKEN}"
 }
 
 # ============================================================
-# PHASE 1 - API REQUEST & SAVE RESPONSE
+# PHASE 1 - API REQUEST
 # ============================================================
 
 json_files = sorted(DATA_DIR.glob("*.json"))
-
 if not json_files:
-    print("❌ No JSON payload found in data_test/")
-    exit(1)
+    raise RuntimeError("❌ No JSON payload found")
 
-print(f"🚀 Start processing {len(json_files)} request(s)...\n")
+print(f"🚀 Processing {len(json_files)} request(s)\n")
 
-for index, payload_file in enumerate(json_files, start=1):
-    print(f"▶️  Processing [{index}/{len(json_files)}] : {payload_file.name}")
+for idx, payload_file in enumerate(json_files, start=1):
+    print(f"▶️ [{idx}] {payload_file.name}")
 
     payload = json.loads(payload_file.read_text(encoding="utf-8"))
 
     response = requests.post(
         API_URL,
-        headers=headers,
+        headers=http_headers,
         json=payload,
-        timeout=30
+        timeout=60
     )
 
     try:
@@ -76,10 +112,12 @@ for index, payload_file in enumerate(json_files, start=1):
     except ValueError:
         response_body = {}
 
-    with (RESPONSE_DIR / f"response-{index}.json").open("w", encoding="utf-8") as f:
+    # save response json (WITH AUTH INFO)
+    with (RESPONSE_DIR / f"response-{idx}.json").open("w", encoding="utf-8") as f:
         json.dump(
             {
                 "file": payload_file.name,
+                "auth": auth_info,
                 "status_code": response.status_code,
                 "response": response_body
             },
@@ -88,106 +126,71 @@ for index, payload_file in enumerate(json_files, start=1):
             ensure_ascii=False
         )
 
-print("\n🎉 All requests processed.\n")
+    # save curl txt (MULTILINE & PRETTY)
+    curl_txt = generate_curl_txt(API_URL, http_headers, payload)
+    (RESPONSE_DIR / f"response-{idx}.curl.txt").write_text(curl_txt, encoding="utf-8")
+
+print("\n🎉 API phase done\n")
 
 # ============================================================
-# PHASE 2 - LOAD TENANT TAIS (FIXED)
+# LOAD TENANT TAIS
 # ============================================================
 
-TENANT_TAIS_FILE = REPORT_DIR / "tais_code_tenant.json"
-
-with TENANT_TAIS_FILE.open(encoding="utf-8") as f:
-    tenant_data = json.load(f)
-
-if "tais_by_tenant" not in tenant_data:
-    raise ValueError("❌ Invalid tenant file format: 'tais_by_tenant' not found")
-
-tais_by_tenant = tenant_data["tais_by_tenant"]
+tenant_file = REPORT_DIR / "tais_code_tenant.json"
+tenant_data = json.loads(tenant_file.read_text(encoding="utf-8"))
 
 tais_to_tenants = defaultdict(set)
-alphabet = list(string.ascii_uppercase)
 
-for idx, (tenant_id, tais_list) in enumerate(tais_by_tenant.items()):
-    tenant_label = f"Tenant {alphabet[idx]}"
-
+for i, (_, tais_list) in enumerate(tenant_data["tais_by_tenant"].items(), start=1):
+    tenant_label = f"Tenant {i}"
     for tais_cd in tais_list:
-        if not tais_cd:
-            continue
-
         norm = normalize_tais(tais_cd)
-        tais_to_tenants[norm].add(tenant_label)
+        if norm:
+            tais_to_tenants[norm].add(tenant_label)
 
 # ============================================================
-# LOAD TAIS MASTER (EXCEL)
+# LOAD TAIS MASTER
 # ============================================================
 
-CODELIST_FILE = "codelist202512.xlsx"
-df_master = pd.read_excel(CODELIST_FILE, header=0)
+codelist_file = find_codelist_file()
+print(f"📘 Using codelist: {codelist_file.name}")
 
+df_master = pd.read_excel(codelist_file)
 tais_master = {}
 
 for _, row in df_master.iterrows():
-    tais_cd = str(row.iloc[0]).strip()
-    if not tais_cd or tais_cd.lower() == "nan":
+    tais_cd = normalize_tais(row.iloc[0])
+    if not tais_cd:
         continue
 
     rent_flag = ""
     if len(row) > 4 and not pd.isna(row.iloc[4]):
         rent_flag = str(row.iloc[4]).strip()
 
-    tais_master[normalize_tais(tais_cd)] = rent_flag
+    tais_master[tais_cd] = rent_flag
 
 # ============================================================
-# READ RESPONSE FILES
-# ============================================================
-
-ordered_results = OrderedDict()
-seen = set()
-
-for file in sorted(RESPONSE_DIR.glob("response-*.json")):
-    with file.open(encoding="utf-8") as f:
-        raw = json.load(f)
-
-    response_body = raw.get("response", {})
-    if not isinstance(response_body, dict):
-        continue
-
-    for item in response_body.get("ChoiseRentalList", []):
-        tais_cd = item.get("TaisCd")
-        if not tais_cd:
-            continue
-
-        norm = normalize_tais(tais_cd)
-
-        if norm not in seen:
-            seen.add(norm)
-            ordered_results[norm] = file.name
-
-# ============================================================
-# BUILD RESULT TABLE
+# BUILD REPORT
 # ============================================================
 
 rows = []
 
-for tais_cd, source_file in ordered_results.items():
-    exists_and_rent = (
-        "Yes"
-        if tais_cd in tais_master and tais_master.get(tais_cd) == "○"
-        else "-"
-    )
+for file in sorted(RESPONSE_DIR.glob("response-*.json")):
+    raw = json.loads(file.read_text(encoding="utf-8"))
+    response_body = raw.get("response", {})
 
-    tenants = sorted(tais_to_tenants.get(tais_cd, []))
-    tenant_display = ", ".join(tenants) if tenants else "Global TAIS"
+    for item in response_body.get("ChoiseRentalList", []):
+        tais_cd = normalize_tais(item.get("TaisCd"))
 
-    rows.append([
-        tais_cd,
-        exists_and_rent,
-        "",
-        tenant_display,
-        source_file
-    ])
+        rows.append([
+            tais_cd,
+            "Yes" if tais_master.get(tais_cd) == "○" else "-",
+            "",
+            ", ".join(sorted(tais_to_tenants.get(tais_cd, []))) or "Global TAIS",
+            file.name
+        ])
 
-headers = [
+excel_headers = [
     "TaisCd",
     "Exists & Rent",
     "Client From?",
@@ -195,14 +198,10 @@ headers = [
     "Source JSON"
 ]
 
-# ============================================================
-# EXPORT EXCEL
-# ============================================================
-
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 output_file = REPORT_DIR / f"compare_result_{timestamp}.xlsx"
 
-pd.DataFrame(rows, columns=headers).to_excel(output_file, index=False)
+pd.DataFrame(rows, columns=excel_headers).to_excel(output_file, index=False)
 
-print("✅ Excel report generated:")
+print("✅ Excel generated:")
 print(output_file)

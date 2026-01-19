@@ -1,0 +1,107 @@
+curl -X POST "https://hitec-ai-be-uat.test-platform.link/equipment/propose/logging" \
+  -header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCMThGMzA5RkQ5QTI0MkI3MUJBMEE5QUFFNUM0MkM4OUZGQTVFMUIiLCJ4NXQiOiIyeGp6Q2YyYUpDdHh1Z3Fhcmx4Q3lKXzZYaHMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwOi8vaGl0ZWMtbXVsdGl0ZW5hbnQtYmUtdWF0LnRlc3QtcGxhdGZvcm0ubGluay8iLCJleHAiOjE3Njg0NTQ1NTIsImlhdCI6MTc2ODQ1MzY1MiwianRpIjoiYjFkOGU4YWUtMzg3ZC00YjUxLWE5MTAtYzg3Zjc1ZWY5N2M3Iiwic3ViIjoiaGl0ZWMtMSIsIm9pX3Byc3QiOiJoaXRlYy0xIiwiY2xpZW50X2lkIjoiaGl0ZWMtMSIsIm9pX3Rrbl9pZCI6IjY2YWNhNWNkLWI1YTUtNGUyMC1hNTNlLTRjNmYxYjEyNWYxZCJ9.A6BFzrvQ_OeHZErTazdAYJk79DS-5VFffLxIL-38h4i2wexLRQnR6646NSFL9vIUf5CdgDAPkm2B4pDuglHqQSbdYacJasQjU4mf-vlaBNWq9rFKtYMWXKOtXG7kH1_jvx-T_8GzIXdGkCOBXsMFUFlSRyfcPT0m8B_w1u-okOnwmwqgEtEEUC58mvCgeOThpuCRGErShSFeQFroOAW7y7ZK0rrTQlzgeInH4WNpWsAdzQkIx-oa4rPBRT4nhSKHm1Y8tPW8fNZpErqZYkccVM15NE9bBb72L8Cu1D5n7sCDirwaClm-Nw_ts4xjpjz80jO_VTOrKpnUc0qa2m24ww" \
+  -header "Content-Type: application/json" \
+  -data '{
+  "AdlList": [
+    {
+      "ServicePlanItemCd": "0001",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0002",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0003",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0004",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0005",
+      "ServicePlanNaiyo": "できる"
+    },
+    {
+      "ServicePlanItemCd": "0006",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0007",
+      "ServicePlanNaiyo": "一部介助"
+    },
+    {
+      "ServicePlanItemCd": "0008",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0009",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0010",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0011",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0012",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0013",
+      "ServicePlanNaiyo": "意思を他者に伝達できる"
+    },
+    {
+      "ServicePlanItemCd": "0014",
+      "ServicePlanNaiyo": "問題無し"
+    },
+    {
+      "ServicePlanItemCd": "0015",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0016",
+      "ServicePlanNaiyo": "下肢筋力低下"
+    },
+    {
+      "ServicePlanItemCd": "0017",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0018",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0019",
+      "ServicePlanNaiyo": null
+    }
+  ],
+  "Age": 93,
+  "CareMngSodanNaiyo": "室内移動時は段差のある箇所にベスポジを設置することで転倒無く安全な移動が出来るように支援する。",
+  "ElevatorFlg": 0,
+  "FamilyKosei": "長男と二人暮らし　長女さんの支援あり",
+  "FamilyLifeMind": "近所の散歩時にはシルバーカーを利用して、少しでも歩く機会を増やしてほしい。自宅内では転倒の無い様に環境を整えたい。",
+  "Height": null,
+  "HonninKimochiFlg": 0,
+  "HonninKimochiNaiyo": "転倒無く安全に生活出来る様にしたい",
+  "HonninLifeMind": "今の身体機能を維持して自宅での生活を続けたいのでデイサービスを利用して運動や交流をして刺激を受け元気になりたい",
+  "JukankyoBiko": "トイレまでの歩行が不安定なため、夜間のみ居間にPトイレを設置することを検討中。",
+  "JukyoTypFlg": 2,
+  "Kaisu": 6,
+  "RiyoFukushiYogu": null,
+  "SeibetsuKbn": "01",
+  "ServiceRiyoJokyo": [
+    "通所介護"
+  ],
+  "ShienPlan": "室内移動時は段差箇所にベスポジを設置し安全を確保。外出時はシルバーカーを用いて歩行の安定を図る。",
+  "SodanNaiyo": "室内外の移動時に転倒が怖い。特に夜間のトイレ移動が不安なため、Pトイレの利用を検討している。洗面室の段差解消についても相談したい。",
+  "TenantId": "test-01",
+  "TokkiJiko": null,
+  "Weight": null,
+  "YokaigoStsKbn": "22",
+  "YubinNo": "8100034"
+}'

@@ -3,9 +3,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# UAT/DEV
 API_BASE_URL = os.getenv("API_BASE_URL")
 API_ENDPOINT = os.getenv("API_ENDPOINT")
 AUTH_URL = os.getenv("AUTH_URL")
+
+# PROD
+# API_BASE_URL = os.getenv("PROD_BASE_URL")
+# API_ENDPOINT = os.getenv("API_ENDPOINT")
+# AUTH_URL = os.getenv("PROD_AUTH_URL")
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")

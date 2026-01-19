@@ -1,84 +1,68 @@
 {
-  "file": "payload-1.json",
+  "file": "scenario-4.0 copy.json",
+  "auth": {
+    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCMThGMzA5RkQ5QTI0MkI3MUJBMEE5QUFFNUM0MkM4OUZGQTVFMUIiLCJ4NXQiOiIyeGp6Q2YyYUpDdHh1Z3Fhcmx4Q3lKXzZYaHMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwOi8vaGl0ZWMtbXVsdGl0ZW5hbnQtYmUtdWF0LnRlc3QtcGxhdGZvcm0ubGluay8iLCJleHAiOjE3Njg0NTQ1NTIsImlhdCI6MTc2ODQ1MzY1MiwianRpIjoiYjFkOGU4YWUtMzg3ZC00YjUxLWE5MTAtYzg3Zjc1ZWY5N2M3Iiwic3ViIjoiaGl0ZWMtMSIsIm9pX3Byc3QiOiJoaXRlYy0xIiwiY2xpZW50X2lkIjoiaGl0ZWMtMSIsIm9pX3Rrbl9pZCI6IjY2YWNhNWNkLWI1YTUtNGUyMC1hNTNlLTRjNmYxYjEyNWYxZCJ9.A6BFzrvQ_OeHZErTazdAYJk79DS-5VFffLxIL-38h4i2wexLRQnR6646NSFL9vIUf5CdgDAPkm2B4pDuglHqQSbdYacJasQjU4mf-vlaBNWq9rFKtYMWXKOtXG7kH1_jvx-T_8GzIXdGkCOBXsMFUFlSRyfcPT0m8B_w1u-okOnwmwqgEtEEUC58mvCgeOThpuCRGErShSFeQFroOAW7y7ZK0rrTQlzgeInH4WNpWsAdzQkIx-oa4rPBRT4nhSKHm1Y8tPW8fNZpErqZYkccVM15NE9bBb72L8Cu1D5n7sCDirwaClm-Nw_ts4xjpjz80jO_VTOrKpnUc0qa2m24ww",
+    "generated_at": "2026-01-15 12:07:31",
+    "expires_in": 900
+  },
   "status_code": 200,
   "response": {
-    "ProposalId": "b25d674a-04d9-4a84-8d59-5dc9f0479af2",
+    "ProposalId": "94126eb6-f4ff-446e-9c49-7f30a8976fbf",
     "ReceiveKekkaKbn": "00",
-    "TeianYmdHms": "2025-12-23T11:19:36.802644+09:00",
+    "TeianYmdHms": "2026-01-15T14:07:48.261050+09:00",
     "ErrMessage": [],
     "NeedRiyuList": [
       {
         "NeedRiyuNo": "1",
-        "FukushiYoguNeedRiyu": "ベッドからの起き上がりが困難で、介助がないと端座位保持ができないため。"
+        "FukushiYoguNeedRiyu": "室内移動時の転倒を防ぎ、安全に移動できるように支援が必要である。"
       },
       {
         "NeedRiyuNo": "2",
-        "FukushiYoguNeedRiyu": "長時間の座位保持が難しく、臀部に疼痛があり褥瘡リスクがあるため。"
+        "FukushiYoguNeedRiyu": "夜間のトイレ移動の不安を軽減するため、居間にポータブルトイレの利用を検討している。"
       },
       {
         "NeedRiyuNo": "3",
-        "FukushiYoguNeedRiyu": "深夜に自力で起き上がろうとして転倒しかけたことがあるため。"
+        "FukushiYoguNeedRiyu": "洗面室の段差を解消し、安全に移動できるように支援が必要である。"
       }
     ],
     "ChoiseRentalList": [
       {
         "NeedRiyuNo": "1",
-        "TaisCd": "00054-000132",
-        "TeianRiyu": "ルーツ（コーナータイプ）は、置くだけで使えるため、ベッドからの起き上がりをサポートします。",
+        "TaisCd": "00254-000874",
+        "TeianRiyu": "手すりの角度調整により、立ち上がり時の重心移動を自然に誘導し、転倒を予防する。",
         "ServiceCd": "1007",
-        "RiyoKeirekiKbn": "2"
-      },
-      {
-        "NeedRiyuNo": "1",
-        "TaisCd": "00200-000201",
-        "TeianRiyu": "介護支援ベッドは、立ち上がりに配慮した高さ調整機能が付いているため、利用者の状態に合わせて調整できます。",
-        "ServiceCd": "1003",
         "RiyoKeirekiKbn": "3"
       },
       {
         "NeedRiyuNo": "2",
-        "TaisCd": "00206-000103",
-        "TeianRiyu": "スモールチェンジ　ラグーナセット　900タイプは、自動体位変換機能により、褥瘡のリスクを軽減します。",
-        "ServiceCd": "1006",
-        "RiyoKeirekiKbn": "2"
-      },
-      {
-        "NeedRiyuNo": "2",
-        "TaisCd": "01102-000018",
-        "TeianRiyu": "通気ビーズマット　おきらくさんは、全身用除圧パッドとして、褥瘡予防に役立ちます。",
-        "ServiceCd": "1005",
-        "RiyoKeirekiKbn": "3"
-      },
-      {
-        "NeedRiyuNo": "3",
-        "TaisCd": "00054-000132",
-        "TeianRiyu": "ルーツ（コーナータイプ）は、置くだけで使えるため、夜間の起き上がりをサポートし、転倒を予防します。",
-        "ServiceCd": "1007",
-        "RiyoKeirekiKbn": "2"
-      },
-      {
-        "NeedRiyuNo": "3",
-        "TaisCd": "00054-000107",
-        "TeianRiyu": "離床支援バーBは、寝返り･起き上がり･立ち上がりの離床動作をサポートするベッド用手すりです。",
+        "TaisCd": "00238-000011",
+        "TeianRiyu": "夜間のトイレまでの移動をサポートし、転倒のリスクを軽減する。",
         "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "3"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00980-000365",
+        "TeianRiyu": "洗面室での立ち座りや移動をサポートし、転倒のリスクを軽減する。",
+        "ServiceCd": "1007",
         "RiyoKeirekiKbn": "3"
       }
     ],
     "KadaiMokuhyoList": [
       {
         "KadaiMokuhyoNo": 1,
-        "KaiketsuNeedKadai": "ベッドからの起き上がりが困難",
-        "FukushiYoguRiyoMokuhyo": "手すりや高さ調整機能付きベッドを使用することで、安全に起き上がれるようにする。"
+        "KaiketsuNeedKadai": "段差のある場所での移動を安全に行いたい。",
+        "FukushiYoguRiyoMokuhyo": "手すりを使用することで、利用者の転倒を防止し、安全な移動を支援する。"
       },
       {
         "KadaiMokuhyoNo": 2,
-        "KaiketsuNeedKadai": "長時間の座位保持による褥瘡リスク",
-        "FukushiYoguRiyoMokuhyo": "体圧分散マットを使用することで、臀部への負担を軽減し、褥瘡を予防する。"
+        "KaiketsuNeedKadai": "夜間のトイレ移動を安全に行いたい。",
+        "FukushiYoguRiyoMokuhyo": "ポータブルトイレを居室に設置することで、移動距離を短縮し、転倒のリスクを軽減する。"
       },
       {
         "KadaiMokuhyoNo": 3,
-        "KaiketsuNeedKadai": "夜間の転倒リスク",
-        "FukushiYoguRiyoMokuhyo": "離床支援用手すりを使用することで、夜間の起き上がりを安全にし、転倒を予防する。"
+        "KaiketsuNeedKadai": "洗面室の段差を安全に昇降したい。",
+        "FukushiYoguRiyoMokuhyo": "手すりを使用することで、洗面室での転倒を防止し、安全な移動を支援する。"
       }
     ]
   }
