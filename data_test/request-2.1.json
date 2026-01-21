@@ -1,0 +1,102 @@
+{
+  "AdlList": [
+    {
+      "ServicePlanItemCd": "0001",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0002",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0003",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0004",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0005",
+      "ServicePlanNaiyo": "できる"
+    },
+    {
+      "ServicePlanItemCd": "0006",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0007",
+      "ServicePlanNaiyo": "一部介助"
+    },
+    {
+      "ServicePlanItemCd": "0008",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0009",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0010",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0011",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0012",
+      "ServicePlanNaiyo": "自立（介助なし）"
+    },
+    {
+      "ServicePlanItemCd": "0013",
+      "ServicePlanNaiyo": "意思を他者に伝達できる"
+    },
+    {
+      "ServicePlanItemCd": "0014",
+      "ServicePlanNaiyo": "問題無し"
+    },
+    {
+      "ServicePlanItemCd": "0015",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0016",
+      "ServicePlanNaiyo": "下肢筋力低下"
+    },
+    {
+      "ServicePlanItemCd": "0017",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0018",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0019",
+      "ServicePlanNaiyo": null
+    }
+  ],
+  "Age": 93,
+  "CareMngSodanNaiyo": "ご本人さんの身体状況と家屋環境から、室内外の移動時の転倒予防が必要。外出時は介助式車いすにて、ご家族の介助移動で転倒無く安全に外出が出来る。室内移動時は段差のあるカ所にベスポジを設置する事で転倒無く安全な移動が出来る",
+  "ElevatorFlg": 0,
+  "FamilyKosei": "長男と二人暮らし　長女さんの支援あり",
+  "FamilyLifeMind": "家にいても何をするでもなく寝ている事が多いので、デイサービスの回数を今以上に増やしたい。活動的な時間を過ごしてほしい。通院等で外出する時に途中で疲れて歩けなくなるので車いすを利用したい。自宅内で転倒の無い様にしたい",
+  "Height": null,
+  "HonninKimochiFlg": 0,
+  "HonninKimochiNaiyo": "転倒無く安全に生活出来る様にしたい",
+  "HonninLifeMind": "今の身体機能を維持して自宅での生活を続けたいのでデイサービスを利用して運動や交流をして刺激を受け元気になりたい",
+  "JukankyoBiko": null,
+  "JukyoTypFlg": 2,
+  "Kaisu": 6,
+  "RiyoFukushiYogu": null,
+  "SeibetsuKbn": "01",
+  "ServiceRiyoJokyo": ["通所介護"],
+  "ShienPlan": "ご本人さんの身体状況と家屋環境から、室内外の移動時の転倒予防が必要。外出時は介助式車いすにて、ご家族の介助移動で転倒無く安全に外出が出来る。室内移動時は段差のあるカ所にベスポジを設置する事で転倒無く安全な移動が出来る",
+  "SodanNaiyo": "室内外の移動時に転倒が怖い。通院や外出時に車いすがあれば安心して安全に外出が出来る様にしたい。自宅内では特に段差のある所での転倒が怖い。洗面室、トイレ出入口の段差が10㎝程あり転倒しない様に手すりを取り付けて安全にしたい",
+  "TenantId": "test-01",
+  "TokkiJiko": null,
+  "Weight": null,
+  "YokaigoStsKbn": "22",
+  "YubinNo": "8100034"
+}

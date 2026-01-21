@@ -1,0 +1,102 @@
+{
+  "AdlList": [
+    {
+      "ServicePlanItemCd": "0001",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0002",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0003",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0004",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0005",
+      "ServicePlanNaiyo": "自分の手で支えればできる"
+    },
+    {
+      "ServicePlanItemCd": "0006",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0007",
+      "ServicePlanNaiyo": "一部介助"
+    },
+    {
+      "ServicePlanItemCd": "0008",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0009",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0010",
+      "ServicePlanNaiyo": "一部介助"
+    },
+    {
+      "ServicePlanItemCd": "0011",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0012",
+      "ServicePlanNaiyo": "見守り等"
+    },
+    {
+      "ServicePlanItemCd": "0013",
+      "ServicePlanNaiyo": "意思を他者に伝達できる"
+    },
+    {
+      "ServicePlanItemCd": "0014",
+      "ServicePlanNaiyo": "問題なし"
+    },
+    {
+      "ServicePlanItemCd": "0015",
+      "ServicePlanNaiyo": "パーキンソン病(2019年）"
+    },
+    {
+      "ServicePlanItemCd": "0016",
+      "ServicePlanNaiyo": "下肢筋力低下"
+    },
+    {
+      "ServicePlanItemCd": "0017",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0018",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0019",
+      "ServicePlanNaiyo": null
+    }
+  ],
+  "Age": 77,
+  "CareMngSodanNaiyo": "ご本人さんの身体状況から、パーキンソン病特有の症状があり室内においても転倒の危険がある。特に小刻み歩行やすくみ足の状況が顕著で、歩き始めが不安定であったり立ち座りの際に何かにつかまっていないと、体のバランスが崩れて転倒しやすい。各所（外階段、玄関、ﾄｲﾚ,ﾍﾞｯﾄﾞ,ｿﾌｧ）に手すりを設置する事で転倒無く安全な移動・動作が出来る。",
+  "ElevatorFlg": 1,
+  "FamilyKosei": "妻と同居",
+  "FamilyLifeMind": "介助負担も大きくなってきているので、手すり等を使って負担なく安全な生活が出来る様にしたい",
+  "Height": 165.0,
+  "HonninKimochiFlg": 0,
+  "HonninKimochiNaiyo": "転倒無く安心して移動や動作が出来る様にしたい",
+  "HonninLifeMind": "転倒の無い様にしたい",
+  "JukankyoBiko": "外階段、玄関框に段差有り",
+  "JukyoTypFlg": 1,
+  "Kaisu": null,
+  "RiyoFukushiYogu": null,
+  "SeibetsuKbn": "01",
+  "ServiceRiyoJokyo": ["通所介護"],
+  "ShienPlan": "ご本人さんの身体状況から、パーキンソン病特有の症状があり室内においても転倒の危険がある。特に小刻み歩行やすくみ足の状況が顕著で、歩き始めが不安定であったり立ち座りの際に何かにつかまっていないと、体のバランスが崩れて転倒しやすい。各所（外階段、玄関、ﾄｲﾚ,ﾍﾞｯﾄﾞ,ｿﾌｧ）に手すりを設置する事で転倒無く安全な移動・動作が出来る。",
+  "SodanNaiyo": "自宅内外での歩行時が不安定で転倒の危険が増えてきた。立ち座りや歩き始めが特に不安定で、足が上手く動かず介助する時も負担が大きい。手すりを使って自分でもしっかり安心して移動・動作出来る様にしてほしい。",
+  "TenantId": "test-01",
+  "TokkiJiko": null,
+  "Weight": 67.0,
+  "YokaigoStsKbn": "22",
+  "YubinNo": "8160814"
+}

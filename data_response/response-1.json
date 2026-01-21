@@ -1,68 +1,274 @@
 {
-  "file": "scenario-4.0 copy.json",
+  "file": "request-1.1.json",
   "auth": {
-    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCMThGMzA5RkQ5QTI0MkI3MUJBMEE5QUFFNUM0MkM4OUZGQTVFMUIiLCJ4NXQiOiIyeGp6Q2YyYUpDdHh1Z3Fhcmx4Q3lKXzZYaHMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwOi8vaGl0ZWMtbXVsdGl0ZW5hbnQtYmUtdWF0LnRlc3QtcGxhdGZvcm0ubGluay8iLCJleHAiOjE3Njg0NTQ1NTIsImlhdCI6MTc2ODQ1MzY1MiwianRpIjoiYjFkOGU4YWUtMzg3ZC00YjUxLWE5MTAtYzg3Zjc1ZWY5N2M3Iiwic3ViIjoiaGl0ZWMtMSIsIm9pX3Byc3QiOiJoaXRlYy0xIiwiY2xpZW50X2lkIjoiaGl0ZWMtMSIsIm9pX3Rrbl9pZCI6IjY2YWNhNWNkLWI1YTUtNGUyMC1hNTNlLTRjNmYxYjEyNWYxZCJ9.A6BFzrvQ_OeHZErTazdAYJk79DS-5VFffLxIL-38h4i2wexLRQnR6646NSFL9vIUf5CdgDAPkm2B4pDuglHqQSbdYacJasQjU4mf-vlaBNWq9rFKtYMWXKOtXG7kH1_jvx-T_8GzIXdGkCOBXsMFUFlSRyfcPT0m8B_w1u-okOnwmwqgEtEEUC58mvCgeOThpuCRGErShSFeQFroOAW7y7ZK0rrTQlzgeInH4WNpWsAdzQkIx-oa4rPBRT4nhSKHm1Y8tPW8fNZpErqZYkccVM15NE9bBb72L8Cu1D5n7sCDirwaClm-Nw_ts4xjpjz80jO_VTOrKpnUc0qa2m24ww",
-    "generated_at": "2026-01-15 12:07:31",
+    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCMThGMzA5RkQ5QTI0MkI3MUJBMEE5QUFFNUM0MkM4OUZGQTVFMUIiLCJ4NXQiOiIyeGp6Q2YyYUpDdHh1Z3Fhcmx4Q3lKXzZYaHMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwOi8vaGl0ZWMtbXVsdGl0ZW5hbnQtYmUtdWF0LnRlc3QtcGxhdGZvcm0ubGluay8iLCJleHAiOjE3Njg5ODc4MDQsImlhdCI6MTc2ODk4NjkwNCwianRpIjoiODBjMWViYTYtZGQ5Zi00YmNkLWJhMzUtMGE3NjRhZDVkZjFiIiwic3ViIjoiaGl0ZWMtMSIsIm9pX3Byc3QiOiJoaXRlYy0xIiwiY2xpZW50X2lkIjoiaGl0ZWMtMSIsIm9pX3Rrbl9pZCI6IjRiOWMyN2VhLTcxYTQtNGM3ZS1hOGZmLWU0MzllY2Q0YTMyYyJ9.qsm6ADqqN_oYURjGnkphrwjoSrMczk7q3kaVT4Qves3OogCKwF1QDoRu6fnOZLAwNQJ_qSaKkKW8CY9mqpTwTiR6__4PN9y5iUoxuFbzeP_36CcJzNP7pLrGnWRCw5CKV87xpeHGPEnYjUC76UPeRYVTJ7WjRwhtM1lH-PbY2TR4yBbe6npcSwxkt_E5tz6458J6bO-37X2YNh3FEq6x70VFDhWnET_6EuvhP-vvLp2pc1omY2MhXYiPwOMwlY1SzSFoozGOoyDiKlxJlAEWHX7hBSayA5wYp6SLCl5Idey95ZQ-AnnC2zVrL9SxPr4VMynWW1xXABENXCBUAARTGA",
+    "generated_at": "2026-01-21 16:15:04",
     "expires_in": 900
   },
   "status_code": 200,
   "response": {
-    "ProposalId": "94126eb6-f4ff-446e-9c49-7f30a8976fbf",
+    "ProposalId": "d985507c-9da4-44f3-a507-35794bc611e7",
     "ReceiveKekkaKbn": "00",
-    "TeianYmdHms": "2026-01-15T14:07:48.261050+09:00",
+    "TeianYmdHms": "2026-01-21T18:15:36.640108+09:00",
     "ErrMessage": [],
     "NeedRiyuList": [
       {
         "NeedRiyuNo": "1",
-        "FukushiYoguNeedRiyu": "室内移動時の転倒を防ぎ、安全に移動できるように支援が必要である。"
+        "FukushiYoguNeedRiyu": "完全に寝たきりのため、特殊寝台の導入を検討する必要がある。"
       },
       {
         "NeedRiyuNo": "2",
-        "FukushiYoguNeedRiyu": "夜間のトイレ移動の不安を軽減するため、居間にポータブルトイレの利用を検討している。"
+        "FukushiYoguNeedRiyu": "完全に寝たきりのため、床ずれ防止用具の導入を検討する必要がある。"
       },
       {
         "NeedRiyuNo": "3",
-        "FukushiYoguNeedRiyu": "洗面室の段差を解消し、安全に移動できるように支援が必要である。"
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、寝返りが困難であり、全介助を必要とする。"
+      },
+      {
+        "NeedRiyuNo": "4",
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、起き上がりが困難であり、全介助を必要とする。"
+      },
+      {
+        "NeedRiyuNo": "5",
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、立ち上がりが困難であり、全介助を必要とする。"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、座位を保持することが困難であり、全介助を必要とする。"
+      },
+      {
+        "NeedRiyuNo": "7",
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、移乗が困難であり、全介助を必要とする。"
+      },
+      {
+        "NeedRiyuNo": "8",
+        "FukushiYoguNeedRiyu": "左半身麻痺のため、屋内歩行が困難であり、全介助を必要とする。"
       }
     ],
     "ChoiseRentalList": [
       {
         "NeedRiyuNo": "1",
-        "TaisCd": "00254-000874",
-        "TeianRiyu": "手すりの角度調整により、立ち上がり時の重心移動を自然に誘導し、転倒を予防する。",
-        "ServiceCd": "1007",
-        "RiyoKeirekiKbn": "3"
+        "TaisCd": "00170-000779",
+        "TeianRiyu": "従来の背上げ動作に、ベッド全体を傾かせる動きを加えた「ラクリアモーション」機能を搭載しているため、背上げ時の身体のずれを軽減し、利用者の安楽性を向上させる。",
+        "ServiceCd": "1003",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00170-000736",
+        "TeianRiyu": "やわらかな寝心地で身体へフィットし、臀部にかかる圧力を効果的に分散することで、床ずれのリスクを軽減する。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00170-000794",
+        "TeianRiyu": "室内の配置換えや掃除をするときなどのベッドの移動を補助する。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00170-000551",
+        "TeianRiyu": "使われる方に合わせ、ワンタッチで、グリップの角度調節可能。ロックレバーには、誤作動を予防するためのセーフティーロックを採用。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "1",
+        "TaisCd": "00170-000527",
+        "TeianRiyu": "抜き差しがしやすく使いやすい構造で、ベッドからの転落や寝具の落下予防に利用できる。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
       },
       {
         "NeedRiyuNo": "2",
-        "TaisCd": "00238-000011",
-        "TeianRiyu": "夜間のトイレまでの移動をサポートし、転倒のリスクを軽減する。",
-        "ServiceCd": "1004",
-        "RiyoKeirekiKbn": "3"
+        "TaisCd": "00468-000001",
+        "TeianRiyu": "空気量とウェッジの簡単な調節で使用者の状態に合わせて形付けでき、柔かく包み込み正しい姿勢をしっかり保持することで、床ずれを予防する。",
+        "ServiceCd": "1002",
+        "RiyoKeirekiKbn": "1"
       },
       {
         "NeedRiyuNo": "3",
-        "TaisCd": "00980-000365",
-        "TeianRiyu": "洗面室での立ち座りや移動をサポートし、転倒のリスクを軽減する。",
+        "TaisCd": "00170-000786",
+        "TeianRiyu": "従来の背上げ動作に、ベッド全体を傾かせる動きを加えた「ラクリアモーション」機能を搭載しているため、体位変換を容易にする。",
+        "ServiceCd": "1003",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00170-000551",
+        "TeianRiyu": "使われる方に合わせ、ワンタッチで、グリップの角度調節可能。ロックレバーには、誤作動を予防するためのセーフティーロックを採用。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00170-000527",
+        "TeianRiyu": "抜き差しがしやすく使いやすい構造で、ベッドからの転落や寝具の落下予防に利用できる。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00054-000137",
+        "TeianRiyu": "さまざまな身体状況の利用者様へのケアに最適な特性で対応する、人の手で行うような優しい自動体位変換機能を備えた高機能エアマットレス。",
+        "ServiceCd": "1005",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "3",
+        "TaisCd": "00563-000081",
+        "TeianRiyu": "持ち手を使い、少ない力でご利用者に優しく体位変換することが可能です。中材は特殊加工のウレタンチップなので、体位変換中も身体にフィットします。",
+        "ServiceCd": "1006",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "4",
+        "TaisCd": "00054-000116",
+        "TeianRiyu": "置くだけで使える安心感・安全性を向上した床置き型手すり。ぐらつきが少なく、安全形状で事故を未然に防止。電動式介護ベッドを含むどのようなベッドにも使用可能。",
         "ServiceCd": "1007",
-        "RiyoKeirekiKbn": "3"
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "5",
+        "TaisCd": "00170-000777",
+        "TeianRiyu": "従来の背上げ動作に、ベッド全体を傾かせる動きを加えた「ラクリアモーション」機能を搭載しているため、立ち上がりを容易にする。",
+        "ServiceCd": "1003",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "5",
+        "TaisCd": "00170-000159",
+        "TeianRiyu": "屈曲性に優れ、キューマラインボトムの動きに合わせて曲がり、座位を安定させる。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "5",
+        "TaisCd": "00170-000551",
+        "TeianRiyu": "使われる方に合わせ、ワンタッチで、グリップの角度調節可能。ロックレバーには、誤作動を予防するためのセーフティーロックを採用。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "5",
+        "TaisCd": "00170-000527",
+        "TeianRiyu": "抜き差しがしやすく使いやすい構造で、ベッドからの転落や寝具の落下予防に利用できる。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "TaisCd": "00170-000786",
+        "TeianRiyu": "従来の背上げ動作に、ベッド全体を傾かせる動きを加えた「ラクリアモーション」機能を搭載しているため、座位を安定させる。",
+        "ServiceCd": "1003",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "TaisCd": "00170-000551",
+        "TeianRiyu": "使われる方に合わせ、ワンタッチで、グリップの角度調節可能。ロックレバーには、誤作動を予防するためのセーフティーロックを採用。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "TaisCd": "00170-000527",
+        "TeianRiyu": "抜き差しがしやすく使いやすい構造で、ベッドからの転落や寝具の落下予防に利用できる。",
+        "ServiceCd": "1004",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "TaisCd": "00054-000137",
+        "TeianRiyu": "さまざまな身体状況の利用者様へのケアに最適な特性で対応する、人の手で行うような優しい自動体位変換機能を備えた高機能エアマットレス。",
+        "ServiceCd": "1005",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "6",
+        "TaisCd": "00563-000081",
+        "TeianRiyu": "持ち手を使い、少ない力でご利用者に優しく体位変換することが可能です。中材は特殊加工のウレタンチップなので、体位変換中も身体にフィットします。",
+        "ServiceCd": "1006",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "7",
+        "TaisCd": "00066-000328",
+        "TeianRiyu": "松永製作所が提案する次世代車いすのセミモジュール、超低床自走式車いす。※前座高350mmは5インチキャスターになります。",
+        "ServiceCd": "1001",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "7",
+        "TaisCd": "00025-000024",
+        "TeianRiyu": "体幹が不安定な方でも安心してご利用いただける大型パッドを採用し、抑速ブレーキにより急加速時などでは自動的にブレーキが働いて、安全に安心して歩行ができます。",
+        "ServiceCd": "1009",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "8",
+        "TaisCd": "00054-000116",
+        "TeianRiyu": "置くだけで使える安心感・安全性を向上した床置き型手すり。ぐらつきが少なく、安全形状で事故を未然に防止。電動式介護ベッドを含むどのようなベッドにも使用可能。",
+        "ServiceCd": "1007",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "8",
+        "TaisCd": "00221-000343",
+        "TeianRiyu": "ドアが横にあるトイレや介助の際に邪魔にならないはね上げ式ひじ掛け。持ち運びや、誤作動防止の為、ストッパー機能をリニューアルしました。",
+        "ServiceCd": "1007",
+        "RiyoKeirekiKbn": "1"
+      },
+      {
+        "NeedRiyuNo": "8",
+        "TaisCd": "00110-000098",
+        "TeianRiyu": "SGマークを取得した安全性を重視した室内専用歩行車。",
+        "ServiceCd": "1009",
+        "RiyoKeirekiKbn": "1"
       }
     ],
     "KadaiMokuhyoList": [
       {
         "KadaiMokuhyoNo": 1,
-        "KaiketsuNeedKadai": "段差のある場所での移動を安全に行いたい。",
-        "FukushiYoguRiyoMokuhyo": "手すりを使用することで、利用者の転倒を防止し、安全な移動を支援する。"
+        "KaiketsuNeedKadai": "寝たきりの状態のため、安楽な姿勢を保持し、快適に過ごせるようにする。",
+        "FukushiYoguRiyoMokuhyo": "特殊寝台を使用することで、利用者の体位変換や姿勢の保持を容易にし、安楽な姿勢で過ごせる時間を増やす。また、ベッドの高さ調整機能を利用することで、介助者の負担を軽減する。"
       },
       {
         "KadaiMokuhyoNo": 2,
-        "KaiketsuNeedKadai": "夜間のトイレ移動を安全に行いたい。",
-        "FukushiYoguRiyoMokuhyo": "ポータブルトイレを居室に設置することで、移動距離を短縮し、転倒のリスクを軽減する。"
+        "KaiketsuNeedKadai": "長時間の臥床による床ずれのリスクを軽減する。",
+        "FukushiYoguRiyoMokuhyo": "床ずれ防止用具を使用することで、体圧を分散し、皮膚への負担を軽減する。"
       },
       {
         "KadaiMokuhyoNo": 3,
-        "KaiketsuNeedKadai": "洗面室の段差を安全に昇降したい。",
-        "FukushiYoguRiyoMokuhyo": "手すりを使用することで、洗面室での転倒を防止し、安全な移動を支援する。"
+        "KaiketsuNeedKadai": "左半身麻痺により、自力での寝返りが困難なため、介助者の負担を軽減しつつ、安全に体位変換を行えるようにする。",
+        "FukushiYoguRiyoMokuhyo": "体位変換を容易にする機能が付いた特殊寝台や、体位変換を補助する用具を使用することで、介助者の負担を軽減し、利用者も安楽に体位変換を行えるようにする。"
+      },
+      {
+        "KadaiMokuhyoNo": 4,
+        "KaiketsuNeedKadai": "左半身麻痺により、自力での起き上がりが困難なため、安全に起き上がれるように支援する。",
+        "FukushiYoguRiyoMokuhyo": "手すりや介助バーを設置することで、利用者が安全に起き上がれるように支援する。また、ベッドの高さを調整することで、起き上がりの際の負担を軽減する。"
+      },
+      {
+        "KadaiMokuhyoNo": 5,
+        "KaiketsuNeedKadai": "左半身麻痺により、自力での立ち上がりが困難なため、安全に立ち上がれるように支援する。",
+        "FukushiYoguRiyoMokuhyo": "手すりや介助バーを設置することで、利用者が安全に立ち上がれるように支援する。また、ベッドの高さを調整することで、立ち上がりの際の負担を軽減する。"
+      },
+      {
+        "KadaiMokuhyoNo": 6,
+        "KaiketsuNeedKadai": "左半身麻痺により、座位を保持することが困難なため、安定した姿勢で座れるように支援する。",
+        "FukushiYoguRiyoMokuhyo": "座位保持をサポートするクッションや、リクライニング機能付きの車椅子を使用することで、利用者が安定した姿勢で座れるように支援する。"
+      },
+      {
+        "KadaiMokuhyoNo": 7,
+        "KaiketsuNeedKadai": "左半身麻痺により、移乗が困難なため、安全かつ容易に移乗できるように支援する。",
+        "FukushiYoguRiyoMokuhyo": "移乗用リフトやスライディングボードを使用することで、介助者の負担を軽減しつつ、利用者が安全に移乗できるようにする。"
+      },
+      {
+        "KadaiMokuhyoNo": 8,
+        "KaiketsuNeedKadai": "左半身麻痺により、屋内歩行が困難なため、安全に屋内を移動できるように支援する。",
+        "FukushiYoguRiyoMokuhyo": "歩行器や手すりを設置することで、利用者が安全に屋内を移動できるように支援する。"
       }
     ]
   }

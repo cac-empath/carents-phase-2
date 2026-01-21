@@ -141,12 +141,11 @@ tenant_data = json.loads(tenant_file.read_text(encoding="utf-8"))
 
 tais_to_tenants = defaultdict(set)
 
-for i, (_, tais_list) in enumerate(tenant_data["tais_by_tenant"].items(), start=1):
-    tenant_label = f"Tenant {i}"
+for tenant_name, tais_list in tenant_data["tais_by_tenant"].items():
     for tais_cd in tais_list:
         norm = normalize_tais(tais_cd)
         if norm:
-            tais_to_tenants[norm].add(tenant_label)
+            tais_to_tenants[norm].add(tenant_name)
 
 # ============================================================
 # LOAD TAIS MASTER

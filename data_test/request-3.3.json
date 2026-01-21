@@ -1,7 +1,4 @@
-curl -X POST "https://hitec-ai-be-uat.test-platform.link/equipment/propose/logging" \
-  -header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCMThGMzA5RkQ5QTI0MkI3MUJBMEE5QUFFNUM0MkM4OUZGQTVFMUIiLCJ4NXQiOiIyeGp6Q2YyYUpDdHh1Z3Fhcmx4Q3lKXzZYaHMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwOi8vaGl0ZWMtbXVsdGl0ZW5hbnQtYmUtdWF0LnRlc3QtcGxhdGZvcm0ubGluay8iLCJleHAiOjE3Njg5ODc4MDQsImlhdCI6MTc2ODk4NjkwNCwianRpIjoiODBjMWViYTYtZGQ5Zi00YmNkLWJhMzUtMGE3NjRhZDVkZjFiIiwic3ViIjoiaGl0ZWMtMSIsIm9pX3Byc3QiOiJoaXRlYy0xIiwiY2xpZW50X2lkIjoiaGl0ZWMtMSIsIm9pX3Rrbl9pZCI6IjRiOWMyN2VhLTcxYTQtNGM3ZS1hOGZmLWU0MzllY2Q0YTMyYyJ9.qsm6ADqqN_oYURjGnkphrwjoSrMczk7q3kaVT4Qves3OogCKwF1QDoRu6fnOZLAwNQJ_qSaKkKW8CY9mqpTwTiR6__4PN9y5iUoxuFbzeP_36CcJzNP7pLrGnWRCw5CKV87xpeHGPEnYjUC76UPeRYVTJ7WjRwhtM1lH-PbY2TR4yBbe6npcSwxkt_E5tz6458J6bO-37X2YNh3FEq6x70VFDhWnET_6EuvhP-vvLp2pc1omY2MhXYiPwOMwlY1SzSFoozGOoyDiKlxJlAEWHX7hBSayA5wYp6SLCl5Idey95ZQ-AnnC2zVrL9SxPr4VMynWW1xXABENXCBUAARTGA" \
-  -header "Content-Type: application/json" \
-  -data '{
+{
   "AdlList": [
     {
       "ServicePlanItemCd": "0001",
@@ -61,11 +58,11 @@ curl -X POST "https://hitec-ai-be-uat.test-platform.link/equipment/propose/loggi
     },
     {
       "ServicePlanItemCd": "0015",
-      "ServicePlanNaiyo": "脳梗塞後遺症（左片麻痺）"
+      "ServicePlanNaiyo": "パーキンソン病(2019年）"
     },
     {
       "ServicePlanItemCd": "0016",
-      "ServicePlanNaiyo": "左半身麻痺"
+      "ServicePlanNaiyo": "下肢筋力低下"
     },
     {
       "ServicePlanItemCd": "0017",
@@ -80,28 +77,26 @@ curl -X POST "https://hitec-ai-be-uat.test-platform.link/equipment/propose/loggi
       "ServicePlanNaiyo": null
     }
   ],
-  "Age": 75,
-  "CareMngSodanNaiyo": "左半身が完全に麻痺しており、自力での移動や寝返りは不可能です。終日ベッド上での生活で、床ずれのリスクが非常に高く、全介助を必要とする重篤な状態です。",
+  "Age": 77,
+  "CareMngSodanNaiyo": "転倒防止のため、階段の利用は禁止しており、台所も火気があり危険なため立ち入り禁止としている。現在はトイレの出入りとベッド周りの立ち座りのみ補助が必要な状態。トイレと寝室に手すりを設置したい。",
   "ElevatorFlg": 1,
   "FamilyKosei": "妻と同居",
-  "FamilyLifeMind": "安全に過ごさせたい",
+  "FamilyLifeMind": "介助負担も大きくなってきているので、手すり等を使って負担なく安全な生活が出来る様にしたい",
   "Height": 165.0,
   "HonninKimochiFlg": 0,
-  "HonninKimochiNaiyo": "苦痛なく過ごしたい",
-  "HonninLifeMind": "自宅で静かに過ごしたい",
-  "JukankyoBiko": null,
-  "JukyoTypFlg": 2,
-  "Kaisu": 6,
+  "HonninKimochiNaiyo": "転倒無く安心して移動や動作が出来る様にしたい",
+  "HonninLifeMind": "転倒の無い様にしたい",
+  "JukankyoBiko": "外階段、玄関框に段差有り",
+  "JukyoTypFlg": 1,
+  "Kaisu": null,
   "RiyoFukushiYogu": null,
   "SeibetsuKbn": "01",
-  "ServiceRiyoJokyo": [
-    "通所介護"
-  ],
-  "ShienPlan": "重度の介助状態に対応する環境整備。",
-  "SodanNaiyo": "完全に寝たきりのため、特殊寝台と床ずれ防止用具の導入を検討したい。",
+  "ServiceRiyoJokyo": ["通所介護"],
+  "ShienPlan": "安全確保のため階段や台所の利用を制限し、トイレや寝室の環境整備に注力する。",
+  "SodanNaiyo": "階段や台所は使わないようにしている。トイレとベッド付近での移動を安全にしたい。",
   "TenantId": "test-01",
   "TokkiJiko": null,
-  "Weight": 65.0,
+  "Weight": 67.0,
   "YokaigoStsKbn": "22",
-  "YubinNo": "8100034"
-}'
+  "YubinNo": "8160814"
+}

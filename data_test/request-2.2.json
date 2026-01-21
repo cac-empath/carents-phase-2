@@ -1,0 +1,102 @@
+{
+  "AdlList": [
+    {
+      "ServicePlanItemCd": "0001",
+      "ServicePlanNaiyo": "できない"
+    },
+    {
+      "ServicePlanItemCd": "0002",
+      "ServicePlanNaiyo": "できない"
+    },
+    {
+      "ServicePlanItemCd": "0003",
+      "ServicePlanNaiyo": "何かにつかまればできる"
+    },
+    {
+      "ServicePlanItemCd": "0004",
+      "ServicePlanNaiyo": "全介助"
+    },
+    {
+      "ServicePlanItemCd": "0005",
+      "ServicePlanNaiyo": "支えてもらえればできる"
+    },
+    {
+      "ServicePlanItemCd": "0006",
+      "ServicePlanNaiyo": "できない"
+    },
+    {
+      "ServicePlanItemCd": "0007",
+      "ServicePlanNaiyo": "できない"
+    },
+    {
+      "ServicePlanItemCd": "0008",
+      "ServicePlanNaiyo": "全介助"
+    },
+    {
+      "ServicePlanItemCd": "0009",
+      "ServicePlanNaiyo": "全介助"
+    },
+    {
+      "ServicePlanItemCd": "0010",
+      "ServicePlanNaiyo": "全介助"
+    },
+    {
+      "ServicePlanItemCd": "0011",
+      "ServicePlanNaiyo": "全介助"
+    },
+    {
+      "ServicePlanItemCd": "0012",
+      "ServicePlanNaiyo": "一部介助"
+    },
+    {
+      "ServicePlanItemCd": "0013",
+      "ServicePlanNaiyo": "ときどき伝達できる"
+    },
+    {
+      "ServicePlanItemCd": "0014",
+      "ServicePlanNaiyo": null
+    },
+    {
+      "ServicePlanItemCd": "0015",
+      "ServicePlanNaiyo": "第12胸椎圧迫骨折、アルツハイマー型認知症"
+    },
+    {
+      "ServicePlanItemCd": "0016",
+      "ServicePlanNaiyo": "廃用性の筋力低下あり"
+    },
+    {
+      "ServicePlanItemCd": "0017",
+      "ServicePlanNaiyo": "Ａ1"
+    },
+    {
+      "ServicePlanItemCd": "0018",
+      "ServicePlanNaiyo": "Ⅲa\r\n"
+    },
+    {
+      "ServicePlanItemCd": "0019",
+      "ServicePlanNaiyo": "物忘れあり"
+    }
+  ],
+  "Age": 85,
+  "CareMngSodanNaiyo": "現状として、歩行が困難で介護負担も大きい。車いすの利用は必須であり、座位保持や負担軽減を考え、通常車いすとｸｯｼｮﾝだけでは座位姿勢が保てず負担が大きい為、ﾘｸﾗｲﾆﾝｸﾞﾃｨﾙﾄ車いすが必要。座位時の負担が大きく、座位姿勢の保持も困難となってきている為、クッションを利用する事で負担を軽減出来る。ベッド上での姿勢保持や下肢の安楽姿勢の維持に体位変換ｸｯｼｮﾝを導入し負担を軽減する",
+  "ElevatorFlg": 0,
+  "FamilyKosei": "次女、長女と同居",
+  "FamilyLifeMind": "次女：引っ越しして姉と同居することになりました。小郡市で利用していたサービスと同じ内容をこちらでも利用して、自宅での生活を続けたいと思います。",
+  "Height": 153.0,
+  "HonninKimochiFlg": 1,
+  "HonninKimochiNaiyo": null,
+  "HonninLifeMind": "確認取れず",
+  "JukankyoBiko": null,
+  "JukyoTypFlg": 2,
+  "Kaisu": 6,
+  "RiyoFukushiYogu": "フランスベッドにて電動介護ベッドを利用\r\nﾃｨﾙﾄﾘｸﾗｲﾆﾝｸﾞ車いす、標準介助式車いす、車いす用クッション、体位変換ｸｯｼｮﾝ",
+  "SeibetsuKbn": "02",
+  "ServiceRiyoJokyo": ["通所介護"],
+  "ShienPlan": "本人の意思の確認は難しい為娘さんの意向を聞きながら課題分析を行った。福祉用具は継続利用とし、通所サービスについてはいと楽しを利用中。日常生活全般に介助が必要であり家族の負担も大きい。生活環境の変化に戸惑われる事が無い様配慮しながら状態に応じたサービスを検討し支援していきたい。　体調を維持しながら在宅生活を継続しましょう。起居動作移動をスムーズに行うとともに家族の負担が軽減出来る様福祉用具を利用しましょう。介助を受けながら定期的に入浴し清潔に過ごしましょう。外出の機会を持ち他者と交流したり活動に参加して楽しみを持って過ごしましょう。車いす座位時の負担が大きい為クッションを利用し負担を軽減する。長時間の座位保持が困難な為、ﾃｨﾙﾄﾘｸﾗｲﾆﾝｸﾞ車いすを導入し座位負担を軽減し安楽な姿勢が保てる。ベッド上での姿勢保持や下肢の安楽姿勢の維持に体位変換ｸｯｼｮﾝを導入し負担を軽減する",
+  "SodanNaiyo": "室内外の移動が困難なので、車いすを利用して転倒なく安全な移動が出来る様にしたい。車いす上での負担が大きくなってきているのでクッションを利用したい。通常車いすでは長時間の座位姿勢が保てない為、安楽な姿勢で座る事が出来る車いすを利用したい。ベッド上での姿勢保持に負担がかかっているので、軽減したい",
+  "TenantId": "test-01",
+  "TokkiJiko": "次女さんがKP　",
+  "Weight": 38.0,
+  "YokaigoStsKbn": "24",
+  "YubinNo": "8190167"
+}
